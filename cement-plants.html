@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Global Cement Plants Database | S.O. Consulting</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+margin:0;
+font-family:Inter;
+color:#1a1a1a;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+padding:20px 8%;
+border-bottom:1px solid #eee;
+}
+
+nav a{
+margin-left:25px;
+text-decoration:none;
+color:#333;
+}
+
+.section{
+padding:100px 8%;
+}
+
+h1{
+font-family:Montserrat;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:40px;
+}
+
+th,td{
+padding:14px;
+border-bottom:1px solid #eee;
+text-align:left;
+}
+
+th{
+background:#f5f7fa;
+}
+
+.search{
+padding:10px;
+width:320px;
+margin-top:20px;
+border:1px solid #ddd;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<img src="logo.svg" height="38">
+
+<nav>
+
+<a href="index.html">Home</a> <a href="projects.html">Projects Tracker</a> <a href="dashboard.html">Capacity Dashboard</a> <a href="cement-plants.html">Cement Plants</a> <a href="contact.html">Contact</a>
+
+</nav>
+
+</header>
+
+<section class="section">
+
+<h1>Global Cement Plants Database</h1>
+
+<p>
+
+S.O. Consulting tracks cement production facilities across global markets including integrated plants and grinding facilities.
+
+</p>
+
+<input class="search" id="search" placeholder="Search company or country">
+
+<table id="table">
+
+<thead>
+
+<tr>
+
+<th>Plant</th>
+<th>Company</th>
+<th>Country</th>
+<th>Capacity</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+<td>Shree Cement Beawar Plant</td>
+<td>Shree Cement</td>
+<td>India</td>
+<td>3.5 Mt</td>
+</tr>
+
+<tr>
+<td>Holcim Ste Genevieve</td>
+<td>Holcim</td>
+<td>USA</td>
+<td>5.0 Mt</td>
+</tr>
+
+<tr>
+<td>Heidelberg Lehigh Edmonton</td>
+<td>Heidelberg Materials</td>
+<td>Canada</td>
+<td>1.3 Mt</td>
+</tr>
+
+<tr>
+<td>Anhui Conch Wuhu Plant</td>
+<td>Anhui Conch</td>
+<td>China</td>
+<td>4.0 Mt</td>
+</tr>
+
+<tr>
+<td>UltraTech Gujarat Plant</td>
+<td>UltraTech Cement</td>
+<td>India</td>
+<td>3.0 Mt</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</section>
+
+<script>
+
+const search=document.getElementById("search");
+
+search.addEventListener("keyup",function(){
+
+let filter=search.value.toLowerCase();
+let rows=document.querySelectorAll("#table tbody tr");
+
+rows.forEach(row=>{
+
+let text=row.innerText.toLowerCase();
+
+row.style.display=text.includes(filter)?"":"none";
+
+});
+
+});
+
+</script>
+
+</body>
+
+</html>
