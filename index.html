@@ -1,13 +1,14 @@
 <!DOCTYPE html>
+
 <html>
 <head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 
-<title>S.O. Consulting Pvt Ltd</title>
+<title>S.O. Consulting Pvt Ltd | Strategic Intelligence for Industrial Markets</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
 
 <style>
 
@@ -15,34 +16,52 @@ body{
 margin:0;
 font-family:Inter;
 color:#1a1a1a;
+background:white;
 }
 
 header{
 display:flex;
 justify-content:space-between;
+align-items:center;
 padding:20px 8%;
 border-bottom:1px solid #eee;
+background:white;
 }
 
 nav a{
 margin-left:25px;
 text-decoration:none;
 color:#333;
+font-weight:500;
 }
 
 .hero{
-padding:150px 8%;
+padding:160px 8%;
 background:linear-gradient(120deg,#0A3D91,#2F80ED);
 color:white;
 }
 
 .hero h1{
 font-family:Montserrat;
-font-size:60px;
+font-size:64px;
+max-width:900px;
+line-height:1.1;
+}
+
+.hero p{
+font-size:22px;
+max-width:700px;
+margin-top:25px;
 }
 
 .section{
-padding:100px 8%;
+padding:110px 8%;
+}
+
+.section h2{
+font-family:Montserrat;
+font-size:42px;
+margin-bottom:40px;
 }
 
 .grid{
@@ -52,14 +71,35 @@ gap:40px;
 }
 
 .card{
+padding:35px;
 border:1px solid #eee;
-padding:30px;
-border-radius:10px;
+border-radius:12px;
+background:white;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:40px;
+}
+
+.stat{
+font-size:48px;
+font-family:Montserrat;
+color:#0A3D91;
+font-weight:700;
 }
 
 footer{
 background:#f5f7fa;
-padding:40px 8%;
+padding:50px 8%;
+font-size:14px;
 }
 
 </style>
@@ -70,15 +110,11 @@ padding:40px 8%;
 
 <header>
 
-<img src="logo.svg" height="40">
+<img src="logo.svg" height="38">
 
 <nav>
 
-<a href="industries.html">Industries</a>
-<a href="cement.html">Cement</a>
-<a href="glass.html">Glass</a>
-<a href="dairy.html">Dairy</a>
-<a href="contact.html">Contact</a>
+<a href="industries.html">Industries</a> <a href="cement.html">Cement</a> <a href="glass.html">Glass</a> <a href="dairy.html">Dairy</a> <a href="contact.html">Contact</a>
 
 </nav>
 
@@ -86,11 +122,11 @@ padding:40px 8%;
 
 <section class="hero">
 
-<h1>Strategic Intelligence for Industrial Markets</h1>
+<h1>Strategic Intelligence for Global Industrial Markets</h1>
 
 <p>
 
-S.O. Consulting provides strategy consulting and market intelligence across sectors including cement, glass manufacturing, dairy ingredients and industrial supply chains.
+S.O. Consulting Pvt Ltd provides strategy consulting and market intelligence across complex industrial sectors including building materials, glass manufacturing, dairy ingredients and global supply chains.
 
 </p>
 
@@ -98,28 +134,92 @@ S.O. Consulting provides strategy consulting and market intelligence across sect
 
 <section class="section">
 
-<h2>Industries</h2>
+<h2>About S.O. Consulting</h2>
+
+<p>
+
+S.O. Consulting Pvt Ltd is a boutique strategy and market intelligence firm focused on industrial markets including building materials, industrial materials and food ingredients.
+
+The firm provides strategic advisory, market intelligence and industry analysis to corporates, investors and infrastructure stakeholders.
+
+</p>
+
+</section>
+
+<section class="section">
+
+<h2>Consulting Services</h2>
 
 <div class="grid">
 
 <div class="card">
-<h3>Cement Industry</h3>
-<p>Demand outlook and production capacity analysis.</p>
+<h3>Market Intelligence</h3>
+<p>Industry analysis, demand forecasting and market sizing.</p>
+</div>
+
+<div class="card">
+<h3>Strategy Advisory</h3>
+<p>Corporate strategy, market entry and growth planning.</p>
+</div>
+
+<div class="card">
+<h3>Investment Due Diligence</h3>
+<p>Commercial due diligence for investors and private equity.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>Industries We Analyse</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Cement & Building Materials</h3>
+<p>Demand outlook, infrastructure investment cycles and capacity analysis.</p>
 </div>
 
 <div class="card">
 <h3>Glass Manufacturing</h3>
-<p>Supply chains and industrial demand drivers.</p>
+<p>Production capacity, supply chains and demand drivers.</p>
 </div>
 
 <div class="card">
 <h3>Dairy Ingredients</h3>
-<p>Dry milk powder trade flows and dairy production.</p>
+<p>Dry milk powder production trends and global dairy trade flows.</p>
 </div>
 
 <div class="card">
 <h3>Industrial Supply Chains</h3>
-<p>Global commodity flows and capacity analysis.</p>
+<p>Global commodity flows and production capacity analysis.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>Global Industrial Intelligence</h2>
+
+<div class="stats">
+
+<div>
+<div class="stat">70+</div>
+<div>Industrial markets analysed</div>
+</div>
+
+<div>
+<div class="stat">120+</div>
+<div>Countries covered</div>
+</div>
+
+<div>
+<div class="stat">5000+</div>
+<div>Industrial facilities tracked</div>
 </div>
 
 </div>
