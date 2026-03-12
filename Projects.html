@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Global Industrial Projects Tracker | S.O. Consulting</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+margin:0;
+font-family:Inter;
+color:#1a1a1a;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+padding:20px 8%;
+border-bottom:1px solid #eee;
+}
+
+nav a{
+margin-left:25px;
+text-decoration:none;
+color:#333;
+}
+
+.section{
+padding:100px 8%;
+}
+
+h1,h2{
+font-family:Montserrat;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:40px;
+}
+
+th,td{
+padding:14px;
+border-bottom:1px solid #eee;
+text-align:left;
+}
+
+th{
+background:#f5f7fa;
+}
+
+.search{
+padding:10px;
+width:300px;
+margin-top:20px;
+border:1px solid #ddd;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<img src="logo.svg" height="38">
+
+<nav>
+
+<a href="index.html">Home</a> <a href="industries.html">Industries</a> <a href="projects.html">Projects Tracker</a> <a href="contact.html">Contact</a>
+
+</nav>
+
+</header>
+
+<section class="section">
+
+<h1>Global Industrial Projects Tracker</h1>
+
+<p>
+
+S.O. Consulting tracks major industrial investment projects across global markets including cement, glass manufacturing and dairy ingredients.
+
+</p>
+
+<input class="search" id="search" placeholder="Search country or industry">
+
+<table id="table">
+
+<thead>
+
+<tr>
+
+<th>Project</th>
+<th>Sector</th>
+<th>Country</th>
+<th>Status</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+<td>Integrated Cement Plant Expansion</td>
+<td>Cement</td>
+<td>India</td>
+<td>Under Construction</td>
+</tr>
+
+<tr>
+<td>Flat Glass Production Facility</td>
+<td>Glass Manufacturing</td>
+<td>Germany</td>
+<td>Operational</td>
+</tr>
+
+<tr>
+<td>Dairy Powder Processing Plant</td>
+<td>Dairy Ingredients</td>
+<td>Netherlands</td>
+<td>Planned</td>
+</tr>
+
+<tr>
+<td>Clinker Production Line</td>
+<td>Cement</td>
+<td>Vietnam</td>
+<td>Under Construction</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</section>
+
+<script>
+
+const search=document.getElementById("search");
+
+search.addEventListener("keyup",function(){
+
+let filter=search.value.toLowerCase();
+let rows=document.querySelectorAll("#table tbody tr");
+
+rows.forEach(row=>{
+
+let text=row.innerText.toLowerCase();
+
+row.style.display=text.includes(filter)?"":"none";
+
+});
+
+});
+
+</script>
+
+</body>
+
+</html>
